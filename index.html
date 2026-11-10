@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
@@ -14,19 +14,21 @@
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li>
-            <a class="header__menu-item header__menu-item_active">главная</a>
+            <a class="header__menu-item">главная</a>
           </li>
           <li>
-            <span>•</span>
-            <a class="header__menu-item">посмотреть лоты</a>
+            <a class="header__menu-item header__menu-item_active"
+              >посмотреть лоты</a
+            >
           </li>
           <li>
-            <span>•</span>
-            <a class="header__menu-item">об аукционе</a>
+            <a class="header__menu-item header__menu-item_active"
+              >об аукционе</a
+            >
           </li>
         </ul>
       </nav>
-      <a>
+      <a class="header__logo">
         <img
           class="header__logo-image"
           src="images/logo-black.svg"
@@ -36,10 +38,14 @@
       <address class="header__address">
         <ul class="header__address-list">
           <li>
-            <a class="header__address-link">+9 999 555 5555</a>
+            <a class="header__address-link" href="tel:+99995555555"
+              >+9 999 555 5555</a
+            >
           </li>
           <li>
-            <a class="header__address-link">info@sobaka.ge</a>
+            <a class="header__address-link" href="mailto:info@sobaka.ge"
+              >info@sobaka.ge</a
+            >
           </li>
           <li>
             <a class="header__address-text"
@@ -51,28 +57,34 @@
     </header>
     <main>
       <section class="cover">
+        <div class="overlay"></div>
         <h1 class="cover__title">
           <span class="accent-span">оно</span>
           <span class="accent-span text-center">тебе</span>
           <span class="accent-span text-right">надо</span>
         </h1>
         <div class="cover__description">
-          <p class="cover__description-subline">
-            Аукцион вещей, вкоторые никто не верил
+          <p class="cover__description-subline cover__description__text-style">
+            Аукцион вещей, в которые никто не верил
           </p>
-          <button class="cover__description-button">Сделать ставку</button>
+          <button
+            class="cover__description-button cover__description__text-style"
+          >
+            Сделать ставку
+          </button>
         </div>
       </section>
       <section class="lots">
-        <h2 class="lots__title"></h2>
+        <h2 class="lots__title">ЛОТЫ</h2>
         <ul class="lots__list">
-          <li>
-            <a>
+          <li class="lots__list-item">
+            <a href="#" class="lots__list-item-link">
               <article class="lot-card">
-                <div class="lot-card__image"></div>
+                <div class="lot-card__image lot-card__image--film"></div>
+                <div class="overlay"></div>
                 <div class="lot-card__content">
                   <h3 class="lot-card__heading">
-                    Фильм режиссёра, который бросил киношколу
+                    ФИЛЬМ РЕЖИССЁРА, КОТОРЫЙ БРОСИЛ КИНОШКОЛУ
                   </h3>
                   <p class="lot-card__description">
                     Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
@@ -83,14 +95,15 @@
               </article>
             </a>
           </li>
-          <li>
-            <a>
+          <li class="lots__list-item">
+            <a href="#" class="lots__list-item-link">
               <article class="lot-card">
-                <div class="lot-card__image"></div>
+                <div class="lot-card__image lot-card__image--book"></div>
+                <div class="overlay"></div>
                 <div class="lot-card__content">
                   <h3 class="lot-card__heading">
-                    Книга, где описан один скучный день из жизни рекламного
-                    агента
+                    КНИГА, ГДЕ ОПИСАН ОДИН СКУЧНЫЙ ДЕНЬ ИЗ ЖИЗНИ РЕКЛАМНОГО
+                    АГЕНТА
                   </h3>
                   <p class="lot-card__description">
                     Объёмом почти в тысячу страниц. Иногда без знаков препинания
@@ -104,26 +117,27 @@
               </article>
             </a>
           </li>
-          <li>
-            <a>
+          <li class="lots__list-item">
+            <a href="#" class="lots__list-item-link">
               <article class="lot-card">
-                <div class="lot-card__image"></div>
+                <div class="lot-card__image lot-card__image--painting"></div>
+                <div class="overlay"></div>
                 <div class="lot-card__content">
                   <h3 class="lot-card__heading">
-                    Картина, которую повторит даже 5-летний сын маминой подруги
+                    КАРТИНА, КОТОРУЮ ПОВТОРИТ ДАЖЕ 5-ЛЕТНИЙ СЫН МАМИНОЙ ПОДРУГИ
                   </h3>
                   <p class="lot-card__description">
                     Ну действительно, там линия, тут кружочек, а здесь и вовсе
                     что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                    котиков... Сколько бы вы на такое поставили, если бы не
-                    знали, что это — одна из революционных работ Кандинского?
+                    котиков… Сколько бы вы на такое поставили, если бы не знали,
+                    что это — одна из революционных работ Кандинского?
                   </p>
                 </div>
               </article>
             </a>
           </li>
         </ul>
-        <a class="lots__more"></a>
+        <a href="#" class="lots__more">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="about__logo-column">

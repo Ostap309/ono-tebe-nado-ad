@@ -36,3 +36,15 @@ img {
 button {
   font: inherit;
 }
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
