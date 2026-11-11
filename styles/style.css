@@ -29,12 +29,12 @@
 }
 
 .header__address {
-  width: 236px;
-  justify-self: end;
-  font-style: normal;
   display: flex;
-  gap: 2px;
   flex-direction: column;
+  justify-self: end;
+  gap: 2px;
+  width: 236px;
+  font-style: normal;
 }
 
 .header__phone,
@@ -124,9 +124,9 @@
   border: 1px solid white;
   padding: 13px 32px;
   color: white;
-  background-color: transparent;             
+  background-color: transparent;
   cursor: pointer;
-  white-space: nowrap;           
+  white-space: nowrap;
 }
 
 .lots {
@@ -232,8 +232,8 @@
   justify-items: center;
   gap: 25px;
   min-height: 595px;
-  padding: 0 24px;
   margin-bottom: 100px;
+  padding: 0 24px;
 }
 
 .about__logo-container {
@@ -278,18 +278,17 @@
 
 .footer {
   display: grid;
-  grid-template-columns: 334px 1fr 340px; /* левая = ширина карточки, как раньше */
-  padding: 50px;
+  grid-template-columns: 334px 1fr 340px;
   min-height: 180px;
+  padding: 50px;
 }
 
-/* левая колонка — адрес */
 .footer__address {
-  font-style: normal;      /* address по умолчанию курсивный — сбрасываем */
   display: flex;
-  flex-direction: column;  /* строки друг под другом */
-  align-items: flex-start; /* выравнивание по ЛЕВОМУ краю, не по центру, как в шапке */
+  flex-direction: column;
+  align-items: flex-start;
   gap: 5px;
+  font-style: normal;
 }
 
 .footer__phone,
@@ -305,20 +304,19 @@
   line-height: 1.4;
 }
 
-/* центральная колонка — меню, текст по центру */
 .footer__menu {
   display: flex;
-  justify-content: center; /* сам список центрируется в колонке */
+  justify-content: center;
 }
 
 .footer__menu-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;     /* текст каждой ссылки по центру */
+  align-items: center;
   gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .footer__menu-link {
@@ -329,17 +327,17 @@
 }
 
 .footer__menu-link_active {
-  text-decoration: none;   /* активная ссылка без подчёркивания */
+  text-decoration: none;
 }
 
-/* правая колонка — иконки соцсетей */
 .footer__social-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  justify-content: space-between; /* три иконки на всю ширину колонки */
-  align-items: center;
+  justify-self: end;
+  justify-content: space-between;
+  width: 240px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .footer__social-link {
@@ -348,6 +346,6 @@
 
 .footer__social-icon {
   display: block;
-  width: 60px;   /* размер по макету */
-  height: 60px;
+  width: 48px;
+  height: 48px;
 }
